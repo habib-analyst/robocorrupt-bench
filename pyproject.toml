@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "robocorrupt-bench"
+version = "0.1.0"
+description = "Visual corruption robustness benchmark for visuomotor policies + learned correction adapter"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = ["torch", "pybullet", "pillow", "numpy"]
+
+[tool.setuptools.packages.find]
+include = ["robocorrupt*"]
